@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataMiningSystem.WindowsFor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataMiningSystem.ClientLogic", "DataMiningSystem.ClientLogic\DataMiningSystem.ClientLogic.csproj", "{074C1DE7-76DC-445D-B450-FF55E319399F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataMiningSystem.WPFClient", "DataMiningSystem.WPFClient\DataMiningSystem.WPFClient.csproj", "{50133862-EF62-4D2F-B6EF-B5A76519EC9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataMiningSystem.WPFClient", "DataMiningSystem.WPFClient\DataMiningSystem.WPFClient.csproj", "{50133862-EF62-4D2F-B6EF-B5A76519EC9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

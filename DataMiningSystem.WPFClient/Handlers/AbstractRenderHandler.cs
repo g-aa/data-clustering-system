@@ -7,7 +7,7 @@ using System.Windows.Controls;
 
 namespace DataMiningSystem.WPFClient.Handlers
 {
-    public class AbstractRenderHandler
+    public abstract class AbstractRenderHandler
     {
         protected readonly Int32 m_pRadius;
         

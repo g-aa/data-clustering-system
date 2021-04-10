@@ -18,21 +18,21 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace DataMiningSystem.WPFClient.Windows.DataSetGenerator
+namespace DataMiningSystem.WPFClient.Windows
 {
     /// <summary>
     /// Interaction logic for GeneratorWindow.xaml
     /// </summary>
     public partial class GeneratorWindow : Window
     {
-        private NewSetRenderHandler m_renderHandler;
+        private NewDataSetRenderHandler m_renderHandler;
 
         public GeneratorWindow()
         {
             this.InitializeComponent();
             this.ResizeMode = ResizeMode.NoResize;
 
-            this.m_renderHandler = new NewSetRenderHandler(this.cnv_dataSet);
+            this.m_renderHandler = new NewDataSetRenderHandler(this.cnv_dataSet);
 
             this.cbx_classType.ItemsSource = this.m_renderHandler.Colors;
             this.cbx_classType.SelectedIndex = 1;
@@ -55,7 +55,7 @@ namespace DataMiningSystem.WPFClient.Windows.DataSetGenerator
         private void Cnv_dataSet_MouseMove(object sender, MouseEventArgs e)
         {
             Canvas canvas = sender as Canvas;
-            double[] coordinates = NewSetRenderHandler.PointToNormalizedCoordinates(e.GetPosition(canvas), canvas.Width, canvas.Height);
+            double[] coordinates = this.m_renderHandler.GetCoordinatesFromPoint(e.GetPosition(canvas));
             this.UpdateStatus(coordinates[0], coordinates[1]);
         }
 

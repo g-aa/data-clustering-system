@@ -6,7 +6,6 @@ using DataMiningSystem.Data.Realization.Information;
 using DataMiningSystem.Data.Realization.Serializable;
 using DataMiningSystem.WPFClient.Handlers;
 using DataMiningSystem.WPFClient.Windows;
-using DataMiningSystem.WPFClient.Windows.DataSetGenerator;
 
 using Microsoft.Win32;
 using System;

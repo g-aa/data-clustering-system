@@ -1,23 +1,18 @@
 ﻿using DataMiningSystem.Data.Realization.Serializable;
+using DataMiningSystem.WindowsFormsClient.Handlers;
 
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DataMiningSystem.WindowsFormsClient.Forms.DataSetGenerator
+namespace DataMiningSystem.WindowsFormsClient.Forms
 {
     public partial class GeneratorForm : Form
     {
         private string m_selectedClass;
 
-        private NewSetRenderHandler m_dsRenderHandler;
+        private NewDataSetRenderHandler m_renderHandler;
 
         public GeneratorForm()
         {
@@ -26,43 +21,39 @@ namespace DataMiningSystem.WindowsFormsClient.Forms.DataSetGenerator
             this.DoubleBuffered = true;
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
 
-            // настройка обработчика отрисовки точек:
-            this.m_dsRenderHandler = new NewSetRenderHandler(this.m_pbx_dataSet);
-            this.m_pbx_dataSet.Image = this.m_dsRenderHandler.GetBitmap();
+            this.m_renderHandler = new NewDataSetRenderHandler(this.pbx_dataSet);
 
-            this.m_cbx_classType.Items.AddRange(this.m_dsRenderHandler.ColorsName);
-            this.m_cbx_classType.SelectedIndex = 1;
-            this.m_selectedClass = this.m_cbx_classType.Items[this.m_cbx_classType.SelectedIndex] as string;
-            this.m_cbx_classType.SelectedIndexChanged += this.m_cbx_classType_SelectedIndexChanged;
+            this.cbx_classType.Items.AddRange(this.m_renderHandler.Colors);
+            this.cbx_classType.SelectedIndex = 1;
+            this.cbx_classType.SelectedIndexChanged += this.Cbx_classType_SelectedIndexChanged;
+            this.m_selectedClass = this.cbx_classType.Items[this.cbx_classType.SelectedIndex] as string;
 
-            this.m_btn_clear.Click += m_btn_clear_Click;
-            this.m_btn_saveDataSet.Click += m_btn_saveDataSet_Click;
+            this.btn_clear.Click += Btn_clear_Click;
+            this.btn_saveDataSet.Click += Btn_saveDataSet_Click;
 
-            this.m_pbx_dataSet.MouseDown += m_pbx_dataSet_MouseDown;
-            this.m_pbx_dataSet.MouseMove += m_pbx_dataSet_MouseMove;
-            this.m_pbx_dataSet.MouseLeave += m_pbx_dataSet_MouseLeave;
+            this.pbx_dataSet.MouseDown += Pbx_dataSet_MouseDown;
+            this.pbx_dataSet.MouseMove += Pbx_dataSet_MouseMove;
+            this.pbx_dataSet.MouseLeave += Pbx_dataSet_MouseLeave;
 
             this.UpdateStatus(double.NaN, double.NaN);
         }
 
-        private void m_pbx_dataSet_MouseLeave(object sender, EventArgs e)
+        private void Pbx_dataSet_MouseLeave(object sender, EventArgs e)
         {
             this.UpdateStatus(double.NaN, double.NaN);
         }
 
-        private void m_pbx_dataSet_MouseMove(object sender, MouseEventArgs e)
+        private void Pbx_dataSet_MouseMove(object sender, MouseEventArgs e)
         {
-            PictureBox pbx = sender as PictureBox;
-            double[] coordinates = SetRenderHandler.PointToNormalizedCoordinates(e.Location, pbx.Width, pbx.Height);
+            double[] coordinates = this.m_renderHandler.GetCoordinatesFromPoint(e.Location);
             this.UpdateStatus(coordinates[0], coordinates[1]);
         }
 
-        private void m_pbx_dataSet_MouseDown(object sender, MouseEventArgs e)
+        private void Pbx_dataSet_MouseDown(object sender, MouseEventArgs e)
         {
             try
             {
-                this.m_dsRenderHandler.AddPoint(new Point(e.Location.X, e.Location.Y), this.m_selectedClass);
-                this.m_pbx_dataSet.Image = this.m_dsRenderHandler.GetBitmap();
+                this.m_renderHandler.AddPoint(new Point(e.Location.X, e.Location.Y), this.m_selectedClass);
             }
             catch (Exception ex)
             {
@@ -70,7 +61,7 @@ namespace DataMiningSystem.WindowsFormsClient.Forms.DataSetGenerator
             }
         }
 
-        private void m_btn_saveDataSet_Click(object sender, EventArgs e)
+        private void Btn_saveDataSet_Click(object sender, EventArgs e)
         {
             try
             {
@@ -83,7 +74,7 @@ namespace DataMiningSystem.WindowsFormsClient.Forms.DataSetGenerator
                     if (fd.ShowDialog() == DialogResult.OK)
                     {
                         FileInfo fi = new FileInfo(fd.FileName);
-                        SerializableSet set = this.m_dsRenderHandler.GetSerializableSet(fd.FileName);
+                        SerializableSet set = this.m_renderHandler.GetSerializableSet(fd.FileName);
                         if (fi.Extension.Equals(".xml"))
                         {
                             DataSetSerializer.SaveToXmlFile(fd.FileName, set);
@@ -106,15 +97,14 @@ namespace DataMiningSystem.WindowsFormsClient.Forms.DataSetGenerator
             }
         }
 
-        private void m_btn_clear_Click(object sender, EventArgs e)
+        private void Btn_clear_Click(object sender, EventArgs e)
         {
-            this.m_dsRenderHandler.ClearSheet();
-            this.m_pbx_dataSet.Image = this.m_dsRenderHandler.GetBitmap();
+            this.m_renderHandler.ClearSheet();
         }
 
-        private void m_cbx_classType_SelectedIndexChanged(object sender, EventArgs e)
+        private void Cbx_classType_SelectedIndexChanged(object sender, EventArgs e)
         {
-            this.m_selectedClass = this.m_cbx_classType.Items[this.m_cbx_classType.SelectedIndex] as string;
+            this.m_selectedClass = this.cbx_classType.Items[this.cbx_classType.SelectedIndex] as string;
         }
 
         private void UpdateStatus(double x, double y)

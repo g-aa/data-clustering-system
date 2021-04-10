@@ -1,4 +1,4 @@
-using DataMiningSystem.WindowsFormsClient.Forms.Primary;
+using DataMiningSystem.WindowsFormsClient.Forms;
 
 using System;
 using System.Collections.Generic;

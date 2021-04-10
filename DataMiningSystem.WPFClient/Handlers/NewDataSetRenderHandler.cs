@@ -11,11 +11,11 @@ using System.Windows.Shapes;
 
 namespace DataMiningSystem.WPFClient.Handlers
 {
-    public class NewSetRenderHandler : AbstractRenderHandler
+    public class NewDataSetRenderHandler : AbstractRenderHandler
     {
         private Dictionary<string, List<Point>> m_points;
 
-        public NewSetRenderHandler(Canvas canvas) : base(canvas)
+        public NewDataSetRenderHandler(Canvas canvas) : base(canvas)
         {
             this.m_points = new Dictionary<string, List<Point>>();
         }
@@ -71,8 +71,8 @@ namespace DataMiningSystem.WPFClient.Handlers
                         {
                             Class = kvp.Key,
                             Cluster = string.Empty,
-                            Coordinates = PointToNormalizedCoordinates(p, this.m_canvas.Width, this.m_canvas.Height)
-                        });
+                            Coordinates = this.GetCoordinatesFromPoint(p)
+                        }); ;
                     });
                 }
                 return set;
@@ -80,9 +80,13 @@ namespace DataMiningSystem.WPFClient.Handlers
             throw new ArgumentException("в сохраняемом наборе данных отсутствуют точки");
         }
 
-        public static double[] PointToNormalizedCoordinates(Point point, double width, double height)
+        internal double[] GetCoordinatesFromPoint(Point point)
         {
-            return new double[] { point.X / width, (height - point.Y) / height };
+            return new double[]
+            {
+                (double)point.X / this.m_canvas.Width,
+                ((double)this.m_canvas.Height - point.Y) / this.m_canvas.Height
+            };
         }
     }
 }

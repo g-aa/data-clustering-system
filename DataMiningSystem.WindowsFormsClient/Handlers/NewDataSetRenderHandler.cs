@@ -1,39 +1,44 @@
-﻿using DataMiningSystem.Data.Realization.Math;
-using DataMiningSystem.Data.Realization.Serializable;
+﻿using DataMiningSystem.Data.Realization.Serializable;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DataMiningSystem.WindowsFormsClient.Forms.DataSetGenerator
+namespace DataMiningSystem.WindowsFormsClient.Handlers
 {
-    internal class NewSetRenderHandler : SetRenderHandler
+    internal class NewDataSetRenderHandler : AbstractRenderHandler
     {
         private Dictionary<string, List<Point>> m_points;
 
-        internal NewSetRenderHandler(PictureBox box) : base(box) 
+        internal NewDataSetRenderHandler(PictureBox box) : base(box)
         {
             this.m_points = new Dictionary<string, List<Point>>();
         }
 
-        internal override void ClearSheet()
+        internal new void ClearSheet()
         {
             this.m_points.Clear();
             base.ClearSheet();
         }
 
-        internal void AddPoint(Point point, string colorName)
+        internal void AddPoint(Point point, string sColor)
         {
-            Brush brush = new SolidBrush(this.m_colors.First(c => c.Name.Equals(colorName)));
-            this.m_graphics.FillEllipse(brush, CalcPointRectangle(point, this.m_pointRadius));
+            this.m_graphics.FillEllipse(
+                new SolidBrush(
+                    this.m_colors.First(c => c.Name.Equals(sColor))
+                ), 
+                GetRectangle(point, this.m_pRadius)
+            );
+            this.m_box.Refresh();
 
-            if (!this.m_points.ContainsKey(colorName))
+            if (!this.m_points.ContainsKey(sColor))
             {
-                this.m_points.Add(colorName, new List<Point>());
+                this.m_points.Add(sColor, new List<Point>());
             }
-            this.m_points[colorName].Add(point);
+            this.m_points[sColor].Add(point);
         }
 
         internal SerializableSet GetSerializableSet(String setName)
@@ -54,7 +59,7 @@ namespace DataMiningSystem.WindowsFormsClient.Forms.DataSetGenerator
                         {
                             Class = kvp.Key,
                             Cluster = string.Empty,
-                            Coordinates = PointToNormalizedCoordinates(p, this.m_bitmap.Width, this.m_bitmap.Height)
+                            Coordinates = this.GetCoordinatesFromPoint(p)
                         });
                     });
                 }

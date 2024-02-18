@@ -1,0 +1,331 @@
+{
+  "SetName": "set2.json",
+  "Titles": [ "x1", "x2", "class", "cluster" ],
+  "Points": [
+    {
+      "Coordinates": [ 0.1273972602739726, 0.8522388059701492 ],
+      "Class": "DarkGreen",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.1684931506849315, 0.9417910447761194 ],
+      "Class": "DarkGreen",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.18904109589041096, 0.9194029850746268 ],
+      "Class": "DarkGreen",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.2219178082191781, 0.8537313432835821 ],
+      "Class": "DarkGreen",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.18904109589041096, 0.7567164179104477 ],
+      "Class": "DarkGreen",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.20821917808219179, 0.6805970149253732 ],
+      "Class": "DarkGreen",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.24794520547945206, 0.7134328358208956 ],
+      "Class": "DarkGreen",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.2, 0.8283582089552238 ],
+      "Class": "DarkGreen",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.18904109589041096, 0.8597014925373134 ],
+      "Class": "DarkGreen",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.38082191780821917, 0.8238805970149253 ],
+      "Class": "DarkGreen",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.2219178082191781, 0.7850746268656716 ],
+      "Class": "DarkGreen",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.27945205479452057, 0.9328358208955224 ],
+      "Class": "DarkGreen",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.30273972602739724, 0.8925373134328358 ],
+      "Class": "DarkGreen",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.28356164383561644, 0.8014925373134328 ],
+      "Class": "DarkGreen",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.3315068493150685, 0.7253731343283583 ],
+      "Class": "DarkGreen",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.14383561643835616, 0.7388059701492538 ],
+      "Class": "DarkGreen",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.09726027397260274, 0.8104477611940298 ],
+      "Class": "DarkGreen",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.13013698630136986, 0.8582089552238806 ],
+      "Class": "DarkGreen",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.038356164383561646, 0.6492537313432836 ],
+      "Class": "DarkGreen",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.07123287671232877, 0.6194029850746269 ],
+      "Class": "DarkGreen",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.19452054794520549, 0.5686567164179105 ],
+      "Class": "DarkGreen",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.26986301369863014, 0.6298507462686567 ],
+      "Class": "DarkGreen",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.33013698630136984, 0.6925373134328359 ],
+      "Class": "DarkGreen",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.363013698630137, 0.8208955223880597 ],
+      "Class": "DarkGreen",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.39315068493150684, 0.9164179104477612 ],
+      "Class": "DarkGreen",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.3506849315068493, 0.9656716417910448 ],
+      "Class": "DarkGreen",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.1726027397260274, 0.9313432835820895 ],
+      "Class": "DarkGreen",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.10273972602739725, 0.9582089552238806 ],
+      "Class": "DarkGreen",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.052054794520547946, 0.9134328358208955 ],
+      "Class": "DarkGreen",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.052054794520547946, 0.8149253731343283 ],
+      "Class": "DarkGreen",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.08767123287671233, 0.746268656716418 ],
+      "Class": "DarkGreen",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.16027397260273973, 0.7029850746268657 ],
+      "Class": "DarkGreen",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.1684931506849315, 0.6417910447761194 ],
+      "Class": "DarkGreen",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.14520547945205478, 0.6373134328358209 ],
+      "Class": "DarkGreen",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.9013698630136986, 0.9074626865671642 ],
+      "Class": "Red",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.9273972602739726, 0.8835820895522388 ],
+      "Class": "Red",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.8616438356164383, 0.7567164179104477 ],
+      "Class": "Red",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.8479452054794521, 0.6805970149253732 ],
+      "Class": "Red",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.7671232876712328, 0.8283582089552238 ],
+      "Class": "Red",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.7835616438356164, 0.8791044776119403 ],
+      "Class": "Red",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.8356164383561644, 0.8686567164179104 ],
+      "Class": "Red",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.8945205479452055, 0.7880597014925373 ],
+      "Class": "Red",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.9136986301369863, 0.7388059701492538 ],
+      "Class": "Red",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.7547945205479452, 0.6850746268656717 ],
+      "Class": "Red",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.815068493150685, 0.7328358208955223 ],
+      "Class": "Red",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.7890410958904109, 0.8014925373134328 ],
+      "Class": "Red",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.8178082191780822, 0.7925373134328358 ],
+      "Class": "Red",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.8232876712328767, 0.7597014925373134 ],
+      "Class": "Red",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.8273972602739726, 0.8134328358208955 ],
+      "Class": "Red",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.8479452054794521, 0.14776119402985075 ],
+      "Class": "DarkMagenta",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.8246575342465754, 0.16567164179104477 ],
+      "Class": "DarkMagenta",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.6328767123287671, 0.2701492537313433 ],
+      "Class": "DarkMagenta",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.6342465753424658, 0.40746268656716417 ],
+      "Class": "DarkMagenta",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.7205479452054795, 0.3835820895522388 ],
+      "Class": "DarkMagenta",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.6452054794520548, 0.26417910447761195 ],
+      "Class": "DarkMagenta",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.38767123287671235, 0.20149253731343283 ],
+      "Class": "DarkMagenta",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.3136986301369863, 0.2417910447761194 ],
+      "Class": "DarkMagenta",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.3356164383561644, 0.14477611940298507 ],
+      "Class": "DarkMagenta",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.5424657534246575, 0.10746268656716418 ],
+      "Class": "DarkMagenta",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.5780821917808219, 0.25671641791044775 ],
+      "Class": "DarkMagenta",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.43424657534246575, 0.3283582089552239 ],
+      "Class": "DarkMagenta",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.35342465753424657, 0.34776119402985073 ],
+      "Class": "DarkMagenta",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.27671232876712326, 0.2955223880597015 ],
+      "Class": "DarkMagenta",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.3136986301369863, 0.24776119402985075 ],
+      "Class": "DarkMagenta",
+      "Cluster": ""
+    },
+    {
+      "Coordinates": [ 0.1726027397260274, 0.20597014925373133 ],
+      "Class": "DarkMagenta",
+      "Cluster": ""
+    }
+  ]
+}

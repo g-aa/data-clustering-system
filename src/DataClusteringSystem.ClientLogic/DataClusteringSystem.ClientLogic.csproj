@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataClusteringSystem.Algoritms\DataClusteringSystem.Algoritms.csproj" />
+    <ProjectReference Include="..\DataClusteringSystem.Data\DataClusteringSystem.Data.csproj" />
+  </ItemGroup>
+</Project>

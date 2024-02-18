@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataClusteringSystem.Algoritms", "src\DataClusteringSystem.Algoritms\DataClusteringSystem.Algoritms.csproj", "{0D71A5CD-BF92-42D3-9399-7A672D185672}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataClusteringSystem.Data", "src\DataClusteringSystem.Data\DataClusteringSystem.Data.csproj", "{9F89371D-216A-4228-BA14-748862970E90}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataClusteringSystem.WindowsFormsClient", "src\DataClusteringSystem.WindowsFormsClient\DataClusteringSystem.WindowsFormsClient.csproj", "{6793D17D-B0E9-475B-9F26-0701C982CD1E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataClusteringSystem.ClientLogic", "src\DataClusteringSystem.ClientLogic\DataClusteringSystem.ClientLogic.csproj", "{074C1DE7-76DC-445D-B450-FF55E319399F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataClusteringSystem.WPFClient", "src\DataClusteringSystem.WPFClient\DataClusteringSystem.WPFClient.csproj", "{50133862-EF62-4D2F-B6EF-B5A76519EC9C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{020F2231-4E25-44EB-9F49-9C9C765D7915}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{E069B68A-2FDA-452A-83CA-901A071A9BE8}"
+	ProjectSection(SolutionItems) = preProject
+		images\generatorForm.png = images\generatorForm.png
+		images\generatorForm.wpf.png = images\generatorForm.wpf.png
+		images\mainForm.png = images\mainForm.png
+		images\mainForm.wpf.png = images\mainForm.wpf.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "misc", "misc", "{4CFE48FD-DD95-452A-9488-040341F474FC}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		icon.png = icon.png
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sets", "sets", "{E24B3BF4-18DB-49BD-B4F4-2532AF5FB43A}"
+	ProjectSection(SolutionItems) = preProject
+		sets\set1.json = sets\set1.json
+		sets\set2.json = sets\set2.json
+		sets\set3.json = sets\set3.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D71A5CD-BF92-42D3-9399-7A672D185672}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D71A5CD-BF92-42D3-9399-7A672D185672}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D71A5CD-BF92-42D3-9399-7A672D185672}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D71A5CD-BF92-42D3-9399-7A672D185672}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F89371D-216A-4228-BA14-748862970E90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F89371D-216A-4228-BA14-748862970E90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F89371D-216A-4228-BA14-748862970E90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F89371D-216A-4228-BA14-748862970E90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6793D17D-B0E9-475B-9F26-0701C982CD1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6793D17D-B0E9-475B-9F26-0701C982CD1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6793D17D-B0E9-475B-9F26-0701C982CD1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6793D17D-B0E9-475B-9F26-0701C982CD1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{074C1DE7-76DC-445D-B450-FF55E319399F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{074C1DE7-76DC-445D-B450-FF55E319399F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{074C1DE7-76DC-445D-B450-FF55E319399F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{074C1DE7-76DC-445D-B450-FF55E319399F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50133862-EF62-4D2F-B6EF-B5A76519EC9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50133862-EF62-4D2F-B6EF-B5A76519EC9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50133862-EF62-4D2F-B6EF-B5A76519EC9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50133862-EF62-4D2F-B6EF-B5A76519EC9C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0D71A5CD-BF92-42D3-9399-7A672D185672} = {020F2231-4E25-44EB-9F49-9C9C765D7915}
+		{9F89371D-216A-4228-BA14-748862970E90} = {020F2231-4E25-44EB-9F49-9C9C765D7915}
+		{6793D17D-B0E9-475B-9F26-0701C982CD1E} = {020F2231-4E25-44EB-9F49-9C9C765D7915}
+		{074C1DE7-76DC-445D-B450-FF55E319399F} = {020F2231-4E25-44EB-9F49-9C9C765D7915}
+		{50133862-EF62-4D2F-B6EF-B5A76519EC9C} = {020F2231-4E25-44EB-9F49-9C9C765D7915}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F01FEF35-ED7D-4F03-95EF-585398519D9F}
+	EndGlobalSection
+EndGlobal

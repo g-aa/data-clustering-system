@@ -1,9 +1,19 @@
-# DataMiningSystem
+# <p><img src="icon.png" width="64px" height="64px" align="middle"/> Data clustering system</p>
+
 Кластеризатор набора данных.
 
-Реализован следующий функционал:
--	методы кластеризации (однопоточный и многопоточный варианты): KMEANS, KMEDOIDS;
--	ввод / вывод наборов данных в формате *.json и *.xml;
--	UI в двух вариантах: Windows Forms и WPF. Пример скриншотов в папке UIScreenshots;
+## Перечень технологий
 
-При выполнении программной реализации использовался .NET 5 framework.
+net8.0
+
+## Описание
+
+- методы кластеризации `KMEANS`, `KMEDOIDS`;
+- формат ввода / вывода данных `*.json` и `*.xml`;
+- UI реализация `Windows Forms` и `WPF`.
+
+## Пример UI компонентов
+
+<p align="center"><img src="images/mainForm.png" width="65%" /></p>
+
+<p align="center"><img src="images/generatorForm.png" width="65%" /></p>
